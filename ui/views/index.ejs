@@ -2,10 +2,72 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <!-- 
+      Page header
+        App Name
+        menu_today = Today's Menu
+        storage =  Storage
+        Login
+    -->
+    <div style="margin: 2.5rem 2.5rem 2.5rem 2.5rem">
+      <header>
+        <div>
+          <div style="float:left">
+            <h3>
+              <i class="material-icons">food_bank</i>
+              Meal Prep</h3>
+          </div>
+          <div style="float:right">
+            <nav>
+              <a href="/">Today's Menu</a> |
+              <a href="/storage">Storage</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+    </div>
+    <br>
+    <div style="margin: 2.5rem 2.5rem 2.5rem 2.5rem">
+      <!--
+        Heading
+        List of meals
+        For each item add meal label and show selected meal items with a comman update button by heading 
+      -->
+      <div style="float:left">
+        <h2> Today's Menu   
+          <button type="button">
+            <i class="material-icons">edit_note</i>
+          </button>
+        </h2>
+      </div>
+      <div>
+        <table style="width:100%">
+          <tr>
+            <th>Meal</th>
+            <th>Items</th>
+          </tr>
+          <tr>
+            <td>Breakfast</td>
+            <td>Cornflakes</td>
+          </tr>
+          <tr>
+            <td>Lunch</td>
+            <td>Pizza</td>
+          </tr>
+          <tr>
+            <td>Evening Snacks</td>
+            <td>Biscuits</td>
+          </tr>
+          <tr>
+            <td>Dinner</td>
+            <td>Noodles</td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </body>
 </html>
